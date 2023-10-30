@@ -40,7 +40,7 @@ const init = async () => {
   renderusers(users);
 };
 
-logoutHandler = () => {
+const logoutHandler = () => {
   document.cookie = "token=; max-age=0;";
   location.assign("./index.html");
 };
